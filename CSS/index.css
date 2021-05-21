@@ -16,3 +16,45 @@
 .navbar-custom {
     background-color: #709189;
 }
+.navbar-nav .navbar-btn .nav-link {
+    border-color: #E5584C;
+    font-family: "Gill Sans",Helvetica,Arial,sans-serif;
+    /* font-weight: 700; */
+    color: #fff !important;
+    background-color: #3A7673;
+    /* padding: 6px 6px 5px 5px !important; */
+    /* margin: auto; */
+}
+.navbar-nav > li {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-family: "Gill Sans",Helvetica,Arial,sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.form-inline {
+    font-family: "Gill Sans",Helvetica,Arial,sans-serif;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.btn-outline-success {
+    background-color: #E5584C;
+    border: none;
+    color: white;
+    cursor: pointer;
+} 
+.btn-outline-success:hover {
+    background-color: #0D1D21;
+}
+/* .navbar-btn:hover {
+    color: #FFF;
+    background-color: #E5584C !important;
+    border-color: #E5584C !important;
+}
+.nav-link:hover {
+    color: #FFF;
+    background-color: #E5584C !important;
+    border-color: #E5584C !important;
+} */
