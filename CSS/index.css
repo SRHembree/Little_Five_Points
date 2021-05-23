@@ -65,13 +65,9 @@
 .maxWidth {
     width: 100%;
 }
-/* .navbar-btn:hover {
-    color: #FFF;
-    background-color: #E5584C !important;
-    border-color: #E5584C !important;
-}
-.nav-link:hover {
-    color: #FFF;
-    background-color: #E5584C !important;
-    border-color: #E5584C !important;
-} */
+#circle {
+    width: 100px;
+    height: 100px;
+    background-image: url(../images/DOE.png);
+    border-radius: 50%
+  }
