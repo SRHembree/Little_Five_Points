@@ -1,14 +1,14 @@
 /* // Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) { ... }
+/* @media (min-width: 576px) { ... } */
 
 /* // Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) { ... }
+/* @media (min-width: 768px) { ... } */
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) { ... }
+/* @media (min-width: 992px) { ... } */
 
 /* // Extra large devices (large desktops, 1200px and up)// */
-@media (min-width: 1200px) {... }
+/* @media (min-width: 1200px) {... } */
 /* <!-- Nav CSS --> */
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
@@ -48,6 +48,35 @@
 .btn-outline-success:hover {
     background-color: #0D1D21;
 }
+/* <!-- Sidebar (TOC) CSS --> */
+@media (min-width: 1200px) {
+    .toc-display {
+        display: block!important;
+    }
+}
+.toc-none {
+    /* display: none!important;  */
+}
+.toc {
+    position: sticky;
+    top: 23.5rem; 
+    z-index: 1000; 
+    height: 0;
+    padding-left: 1rem; 
+}
+.toc-section {
+    padding-left: 5px; 
+    border-left: 1px solid black; 
+}
+.toc-entry {
+    display: block; 
+    background-color: lightgrey; 
+    width: 100px; 
+    margin: 3px; 
+    color: black; 
+}
+
+
 .titleHeader {
     text-align: center;
 }
@@ -64,9 +93,4 @@
 }
 .maxWidth {
     width: 100%;
-}
-#circle {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%
 }
