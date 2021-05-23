@@ -68,6 +68,5 @@
 #circle {
     width: 100px;
     height: 100px;
-    background-image: url(../images/DOE.png);
     border-radius: 50%
-  }
+}
