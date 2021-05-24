@@ -55,7 +55,7 @@ hr {
     border-top: 1px solid rgba(0,0,0,0.5);
 }
 #backgroundCS {
-    background-color: #CEDDDC;
+    background-color: #FFEECD;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 5px;
@@ -71,7 +71,7 @@ hr {
 }
 .toc {
     position: sticky;
-    top: 23.5rem; 
+    top: 12.15rem; 
     z-index: 1000; 
     height: 0;
     padding-left: 1rem; 
@@ -94,6 +94,24 @@ hr {
 }
 .protoVisuals {
     margin: auto; 
+    height: auto;
+    max-width: 100%;
+}
+.card-text {
+    font-size: 15px; 
+}
+.competitorAnalysis img {
+    height: auto;
+    width: 100%;
+}
+.processTiles1 {
+    background-color: #ED946D;
+}
+.processTiles2 {
+    background-color: #1AAEC4;
+}
+.processTiles3 {
+    background-color: #F5B539;
 }
 .contentTitle {
     font-size: 25px;
