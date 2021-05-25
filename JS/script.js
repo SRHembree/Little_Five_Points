@@ -1,5 +1,5 @@
 function myFunction() {
-    var x = document.getElementsByClassName("navbar-toggler")
+    var x = document.getElementsById("hamburger")
     if (x.style.display === "block") {
         x.style.display = "none"; 
     } else {
