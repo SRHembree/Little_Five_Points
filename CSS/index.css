@@ -61,25 +61,48 @@ hr {
     padding-top: 5px;
 }
 /* <!-- Sidebar (TOC) CSS --> */
-@media (min-width: 1200px) {
+/* @media (min-width: 1200px) {
     .toc-display {
         display: block!important;
     }
+} */
+/* .toc-none {
+    display: none!important; 
+} */
+#tocsection {
+    display: block; 
+    position: fixed; 
+    bottom: 15px; 
+    left: 15px; 
+    z-index: 99; 
+    cursor: pointer; 
+    padding: 10px; 
+    border-radius: 10px; 
+    font-size: 18px; 
+    color: white; 
+    background-color: #E5584C; 
+    border: none; 
+    outline: none; 
+    opacity: 0.5; 
 }
-.toc-none {
-    /* display: none!important;  */
+#tocsection:hover {
+    opacity: 1.0; 
+}
+#tableOfContents {
+    display: none; 
 }
 .toc {
     position: sticky;
-    top: 12.15rem; 
+    top: 26.5rem; 
     z-index: 1000; 
     height: 0;
-    padding-left: 1rem; 
+    padding-left: 0.5rem; 
 }
 .toc-section {
     padding-left: 5px; 
-    border-left: 1px solid black; 
-    width: 100px; 
+    /* border-left: 1px solid black;  */
+    width: 115px; 
+    height: 30px;
 }
 .toc-entry {
     display: block; 
@@ -124,4 +147,91 @@ hr {
 }
 .maxWidth {
     width: 100%;
+}
+
+
+
+/* Footer Styles */
+.footer {
+    background-color: #709189;
+    position: relative;
+    bottom: 0;  
+    width: 100vw; 
+    left: 50%; 
+    right: 50%; 
+    margin-left: -50vw; 
+    margin-right: -50vw; 
+} 
+.wrapper {
+    height: 140px;
+    color: white;
+}
+.logo2 {
+    height: 90px; 
+    padding: 5px;
+    width: 150px;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    text-align: center;
+    margin-left: 40px;
+    position: absolute; 
+    left: 0px; 
+    bottom: 40px; 
+}
+.footerTitle {
+    font-size: 27px; 
+    padding-left: 40px;
+    word-spacing: 10px;
+    position: absolute; 
+    left: 10px; 
+    bottom: 0px; 
+    font-family: "PT Sans"; 
+}
+.socialMedia {
+    height: 65px; 
+    padding: 5px;
+    width: 65px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    text-align: center;
+    margin-left: 40px;
+    display: block; 
+}
+.GitHub { 
+    position: absolute; 
+    bottom: 40px; 
+    right: 150px; 
+}
+.LinkedIn {
+    position: absolute; 
+    bottom: 40px; 
+    right: 80px; 
+}
+.FaceBook {
+    position: absolute; 
+    bottom: 40px; 
+    right: 10px; 
+}
+#copyright {
+    position: absolute; 
+    bottom: 10px; 
+    right: 5px; 
+    font-size: 12px;
+}
+.links {
+    color: white;
+    font-size: 18px;
+}
+.textLinks {
+    padding: 0px 0px; 
+    position: absolute; 
+    left: 200px; 
+    bottom: 50px; 
+}
+.fa-envelope {
+    margin: 5px;
+}
+.fa-phone-alt {
+    margin: 5px;
 }

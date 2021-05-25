@@ -58,7 +58,7 @@
     </nav>
     </header>
     <br>
-    <div class="toc toc-none toc-display">
+    <div class="toc toc-none toc-display" id="tableOfContents">
       <ul class="toc-section">
         <li class="toc-entry">
           <a href="#">Home</a>
@@ -92,6 +92,8 @@
         </li>
       </ul>
     </div>
+<!--Scrolling Feature HTML-->
+    <button onclick="newFunction()" id="tocsection" title="Navigate through Sections">Contents</button>
 <!-- Title Section of Case Study -->
     <div class="container">
       <div class="row">
@@ -550,7 +552,43 @@
           </div>
         </div>
         </div>
-  
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="card">
+                  <img class="img-responsive" src="images/teamBuilding.png" alt="Team working through card sorting" class="img-thumbnail">
+              <div class="card-footer">
+                The team working through our site map.
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="card">
+                  <img class="img-responsive" src="images/cardSortingHeader.png" alt="Card sorting header information" class="img-thumbnail">
+                  <div class="card-footer">
+                    Original header navigation tags for L5PCAC
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="card">
+                  <img class="img-responsive" src="images/cardSortingPartnerships.png" alt="Card sorting partnership information" class="img-thumbnail">
+                  <div class="card-footer">
+                    Original header navigation tags for L5PCAC
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="card">
+                <img class="img-responsive" src="images/siteMap.png" alt="A breakdown of the site map" class="img-thumbnail">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
   <!-- Prototyping Section of Case Study -->
         <div class="row">
           <div class="col">
@@ -935,12 +973,11 @@
         </div>
         <br>
         </div>
-        <!-- <div class="col-md-1"></div> -->
       </div>
       </div>
     </div>
 <!-- Footer HTML -->
-      <footer class="page-footer font-small special-color-dark pt-4">
+      <!-- <footer class="page-footer font-small special-color-dark pt-4">
         <div class="container">
           <ul class="list-unstyled list-inline text-right">
             <li class="list-inline-item">
@@ -962,6 +999,40 @@
         </div>
         <div class="footer-copyright text-center py-3">© Sydney Hembree 2021
         </div>
-      </footer>
+      </footer> -->
+          <!-- Footer HTML -->
+    <div class="footer">
+      <div class="wrapper">
+          <div>
+              <img class="logo2" src="../UX_UI_HW_20/images/Personal Logo.png">
+          </div>
+          <div class="textLinks">
+              <i class="fas fa-envelope"></i>
+              <!-- <p>hembree.sydney9@gmail.com</p> -->
+              <a class="links" href="mailto:hembree.sydney9@gmail.com">
+                  hembree.sydney9@gmail.com</a>
+              <br>
+              <i class="fas fa-phone-alt"></i>
+              <a class="links" href="tel:+16784626556">
+                  +1 678-462-6556
+              </a>
+          </div>
+          <div>
+              <img class="socialMedia GitHub" src="../UX_UI_HW_20/images/githubIcon.png">
+          </div>
+          <div>
+              <img class="socialMedia LinkedIn" src="../UX_UI_HW_20/images/linkedinIcon.png">
+          </div>
+          <div>
+              <img class="socialMedia FaceBook" src="../UX_UI_HW_20/images/facebookIcon.png">
+          </div>
+          <div>
+              <h1 class="footerTitle"> Let's chat!</h1>
+          </div>
+          <div>
+              <footer id="copyright">&copy;Sydney Hembree 2021 - All Rights Reserved</footer>
+          </div>
+      </div>
+  </div>
 </body>
 </html>
