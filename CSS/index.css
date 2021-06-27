@@ -1,16 +1,240 @@
 /* // Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) {
+@media screen and (max-width: 500px) {
+/* <!-- Sidebar (TOC) CSS --> */
+    #tocsection {
+        display: block; 
+        position: fixed; 
+        bottom: 3%; 
+        left: 3em; 
+        z-index: 99; 
+        cursor: pointer; 
+        padding: 10px; 
+        border-radius: 10px; 
+        font-size: 18px; 
+        color: white; 
+        background-color: #E5584C; 
+        border: none; 
+        outline: none; 
+        opacity: 0.5; 
+    }
+    #tocsection:hover {
+        opacity: 1.5; 
+    }
+    #tableOfContents {
+        display: none; 
+    }
+    .toc {
+        position: sticky;
+        top: 29.5em; 
+        z-index: 1000; 
+        height: 0;
+        padding-left: 1em; 
+    }
+    .toc-section {
+        width: 115px; 
+        height: 30px;
+    }
+    .toc-entry {
+        display: block; 
+        background-color: white; 
+        font-family: "pt-sans";
+        width: 100px; 
+        margin: 3px; 
+        color: #9A9999; 
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
+        padding-left: 5px; 
+    }
+    .flowerContainer {
+        background-size: 160px; 
+        overflow: hidden; 
+        position: absolute; 
+        left: -2em; 
+        top: 165%; 
+        width: 105%; 
+        height: 300%; 
+        z-index: 0; 
+    }
+    .flower {
+        position: absolute;
+        width: 100%;
+    }
+    .flower img {
+        width: 100%; 
+        animation: big-spin 160s linear infinite; 
+    }
+    @keyframes big-spin {
+        0% {
+           transform: rotate(0deg);
+        }
+        100% {
+           transform: rotate(360deg);
+        }
+    }
+    .backgroundCS {
+        padding-left:20px;
+        padding-right: 20px;
+        padding-top: 5px;
+        background-color: white;
+        border-radius: 20px;
+        position: relative;
+    }
+}
+@media screen and (min-width: 501px max-width: 577px) {
 
-} */
+}
 
-/* // Medium devices (tablets, 768px and up) */
-/* @media (min-width: 768px) { ... } */
+/* // Medium devices (tablets, 768px and under) */
+@media screen and (min-width: 578px) (max width: 768px) {
+    /* <!-- Sidebar (TOC) CSS --> */
+    #tocsection {
+        display: block; 
+        position: fixed; 
+        top: 65%; 
+        left: 2.5em; 
+        z-index: 99; 
+        cursor: pointer; 
+        padding: 10px; 
+        border-radius: 10px; 
+        font-size: 18px; 
+        color: white; 
+        background-color: #E5584C; 
+        border: none; 
+        outline: none; 
+        opacity: 0.5; 
+    }
+    #tocsection:hover {
+        opacity: 1.5; 
+    }
+    #tableOfContents {
+        display: none; 
+    }
+    .toc {
+        position: sticky;
+        top: 40%; 
+        z-index: 1000; 
+        height: 0;
+        margin-left: 2px; 
+        text-align: center;
+    }
+    .toc-section {
+        width: 115px; 
+        height: 30px;
+    }
+    .toc-entry {
+        display: block; 
+        background-color: white; 
+        font-family: "pt-sans";
+        width: 100px; 
+        margin: 1px; 
+        color: #9A9999; 
+        box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
+    }
+    .flowerContainer {
+        background-size: 160px; 
+        overflow: hidden; 
+        position: absolute; 
+        left: -4em; 
+        top: -50%; 
+        width: 60%; 
+        height: 300%; 
+        z-index: 0; 
+    }
+    .flower {
+        position: absolute;
+        left: 0%;
+        top: 57em;
+    }
+    .flower img {
+        width: 100%; 
+        animation: big-spin 160s linear infinite; 
+    }
+    @keyframes big-spin {
+        0% {
+           transform: rotate(0deg);
+        }
+        100% {
+           transform: rotate(360deg);
+        }
+    }
+    .backgroundCS {
+        padding-left:70px;
+        padding-right: 70px;
+        padding-top: 5px;
+        background-color: white;
+        border-radius: 20px;
+        position: relative;
+    }
+}
 
 /* // Large devices (desktops, 992px and up) */
-/* @media (min-width: 992px) { ... } */
+@media screen and (min-width: 769px) {
+    /* <!-- Sidebar (TOC) CSS --> */
+    #tocsection {
+        display: none;
+        visibility: hidden;
+    }
+    .toc {
+        display: none;
+        visibility: hidden;
+    }
+    #tableOfContents {
+        display: none; 
+        visibility: hidden;
+    }
+    .toc-section {
+        display: none;
+        visibility: hidden;
+    }
+    .toc-entry {
+        display: none;
+        visibility: hidden;
+    }
+    .flowerContainer {
+        background-size: 160px; 
+        overflow: hidden; 
+        position: absolute; 
+        left: 0; 
+        top: 0; 
+        width: 100%; 
+        height: 150%; 
+        z-index: 0; 
+    }
+    .flower {
+        position: absolute;
+        width: 50%;
+        left: -25%;
+        top: 20%;
+    }
+    .flower img {
+        width: 100%; 
+        animation: big-spin 160s linear infinite; 
+    }
+    @keyframes big-spin {
+        0% {
+           transform: rotate(0deg);
+        }
+        100% {
+           transform: rotate(360deg);
+        }
+    }
+    .backgroundCS {
+        padding-left:100px;
+        padding-right: 100px;
+        padding-top: 5px;
+        margin-left: -7%;
+        width: 112%;
+        background-color: white;
+        border-radius: 20px;
+        position: relative;
+    }
+}
 
 /* // Extra large devices (large desktops, 1200px and up)// */
-/* @media (min-width: 1200px) {... } */
+@media screen and (min-width: 1200px) {
+
+
+}
+
 html {
     scroll-behavior: smooth; 
 } 
@@ -22,34 +246,6 @@ html {
     padding-top: 2em;
     padding-bottom: 2em;
     width: 100%; 
-}
-.flowerContainer {
-    background-size: 160px; 
-    overflow: hidden; 
-    position: absolute; 
-    left: 0; 
-    top: 0; 
-    width: 100%; 
-    height: 150%; 
-    z-index: 0; 
-}
-.flower {
-    position: absolute;
-    width: 50%;
-    left: -25%;
-    top: 20%;
-}
-.flower img {
-    width: 100%; 
-    animation: big-spin 160s linear infinite; 
-}
-@keyframes big-spin {
-    0% {
-       transform: rotate(0deg);
-    }
-    100% {
-       transform: rotate(360deg);
-    }
 }
 /* <!-- Nav CSS --> */
 .navbar-toggler-icon {
@@ -98,58 +294,6 @@ hr {
     margin-bottom: 1rem;
     border: 0;
     border-top: 1px solid #DC423C;
-}
-#backgroundCS {
-    padding-left:70px;
-    padding-right: 70px;
-    padding-top: 5px;
-    background-color: white;
-    border-radius: 20px;
-    position: relative;
-}
-/* <!-- Sidebar (TOC) CSS --> */
-#tocsection {
-    display: block; 
-    position: fixed; 
-    bottom: 3%; 
-    left: 3em; 
-    z-index: 99; 
-    cursor: pointer; 
-    padding: 10px; 
-    border-radius: 10px; 
-    font-size: 18px; 
-    color: white; 
-    background-color: #E5584C; 
-    border: none; 
-    outline: none; 
-    opacity: 0.5; 
-}
-#tocsection:hover {
-    opacity: 1.5; 
-}
-#tableOfContents {
-    display: none; 
-}
-.toc {
-    position: sticky;
-    top: 29.5em; 
-    z-index: 1000; 
-    height: 0;
-    padding-left: 6em; 
-}
-.toc-section {
-    width: 115px; 
-    height: 30px;
-}
-.toc-entry {
-    display: block; 
-    background-color: white; 
-    font-family: "pt-sans";
-    width: 100px; 
-    margin: 3px; 
-    color: #9A9999; 
-    box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
-    padding-left: 5px; 
 }
 /* Main Content CSS */
 .card-header {
