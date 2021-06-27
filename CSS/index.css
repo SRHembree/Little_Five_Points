@@ -1,5 +1,7 @@
 /* // Small devices (landscape phones, 576px and up) */
-/* @media (min-width: 576px) { ... } */
+/* @media (min-width: 576px) {
+
+} */
 
 /* // Medium devices (tablets, 768px and up) */
 /* @media (min-width: 768px) { ... } */
@@ -11,13 +13,50 @@
 /* @media (min-width: 1200px) {... } */
 html {
     scroll-behavior: smooth; 
+} 
+.gradient{
+    background-image: url(../images/Gradient.png);
+    background-repeat: no-repeat;
+    background-position: center; 
+    background-size: 5000px auto; 
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width: 100%; 
+}
+.flowerContainer {
+    background-size: 160px; 
+    overflow: hidden; 
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    width: 100%; 
+    height: 150%; 
+    z-index: 0; 
+}
+.flower {
+    position: absolute;
+    width: 50%;
+    left: -25%;
+    top: 20%;
+}
+.flower img {
+    width: 100%; 
+    animation: big-spin 160s linear infinite; 
+}
+@keyframes big-spin {
+    0% {
+       transform: rotate(0deg);
+    }
+    100% {
+       transform: rotate(360deg);
+    }
 }
 /* <!-- Nav CSS --> */
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
 }
 .navbar-custom {
-    background-color: #709189;
+    background-color: white;
 }
 .navbar-nav .navbar-btn .nav-link {
     border-color: #E5584C;
@@ -61,17 +100,19 @@ hr {
     border-top: 1px solid #DC423C;
 }
 #backgroundCS {
-    padding-left: 20px;
-    padding-right: 20px;
+    padding-left:70px;
+    padding-right: 70px;
     padding-top: 5px;
-    background-color: #CEDDDC;
+    background-color: white;
+    border-radius: 20px;
+    position: relative;
 }
 /* <!-- Sidebar (TOC) CSS --> */
 #tocsection {
     display: block; 
     position: fixed; 
-    bottom: 15px; 
-    left: 15px; 
+    bottom: 3%; 
+    left: 3em; 
     z-index: 99; 
     cursor: pointer; 
     padding: 10px; 
@@ -84,50 +125,39 @@ hr {
     opacity: 0.5; 
 }
 #tocsection:hover {
-    opacity: 1.0; 
+    opacity: 1.5; 
 }
 #tableOfContents {
     display: none; 
 }
 .toc {
     position: sticky;
-    top: 26.5rem; 
+    top: 29.5em; 
     z-index: 1000; 
     height: 0;
-    padding-left: 0.5rem; 
+    padding-left: 6em; 
 }
 .toc-section {
-    padding-left: 5px; 
-    /* border-left: 1px solid black;  */
     width: 115px; 
     height: 30px;
 }
 .toc-entry {
     display: block; 
     background-color: white; 
-    font-family: "futura-pt";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400; 
+    font-family: "pt-sans";
     width: 100px; 
     margin: 3px; 
-    color: #912331!important; 
+    color: #9A9999; 
     box-shadow: 0 .125rem .25rem rgba(0,0,0,.3)!important; 
     padding-left: 5px; 
 }
-.titleHeader {
-    text-align: center;
-    color: #1B3B43;
-    font-family: "neusa-next-std";
-    font-style: normal;
-    font-size: 32px;
-    padding: auto;
-}
+/* Main Content CSS */
 .card-header {
-    font-family: "futura-pt";
-    font-size: 20px;
+    font-family: "pt-sans", sans-serif;
+    font-size: 22px;
+    font-style: normal;
     color: white;
-    background-color: #1B3B43;
+    background-color: #709189;
 }
 .card-bottom {
     font-family: "roboto-condensed";
@@ -141,42 +171,80 @@ hr {
     color: #B4B4B4;
     font-style: normal;
 }
-.card {
-    margin: 0.4em;
-}
-.titleHeader1 {
+h1, h2 {
     text-align: center;
-    color: #1B3B43;
-    font-family: "neusa-next-std";
-    font-style: normal;
-    font-size: 45px;
+    color: black;
+    font-family: 'pt-sans', sans-serif;
+    font-style: bold;
+    font-size: 40px;
+    padding-top: 30px;
+    font-weight: 600;
 }
-.protoVisuals {
+h3 {
+    margin-top: 10px;
+    font-size: 30px;
+    font-family: "pt-sans", sans-serif;
+    font-style: bold;
+    color: black;
+    font-weight: 600;
+}
+.protoVisuals1 img {
     margin: auto; 
     height: auto;
     max-width: 100%;
+    border: 3;
+    color: #9BAFAA;
+    border-style: solid;
+    border-radius: 5px;
+    z-index: 1;
 }
-.card-text {
-    font-size: 15px; 
+.protoVisuals2 img {
+    margin: auto; 
+    height: auto;
+    max-width: 100%;
+    border: 3;
+    color: #E5584C;
+    border-style: solid;
+    border-radius: 5px;
+    z-index: 1;
+}
+.protoVisuals3 img {
+    margin: auto; 
+    height: auto;
+    max-width: 100%;
+    border: 3;
+    color: #ECC19B;
+    border-style: solid;
+    border-radius: 5px;
+    z-index: 1;
 }
 .competitorAnalysis img {
     height: auto;
     width: 100%;
 }
 .processTiles1 {
-    background-color: #DC423C;
+    background-color: #ECC19B;
+    margin-bottom: 10px;
 }
 .processTiles2 {
-    background-color: #3A7673;
+    background-color: #E5584C;
+    margin-bottom: 10px;
 }
 .processTiles3 {
-    background-color: #1B3B43;
+    background-color: #709189;
+    margin-bottom: 10px;
 }
 .card-title2 {
-    font-family: "futura-pt";
+    font-family: "roboto";
     color: white;
-    font-style: normal;
-    font-size: 22px;
+    font-style: bold;
+    font-size: 20px;
+}
+.card-title1 {
+    font-family: "roboto";
+    color: black;
+    font-style: bold;
+    font-size: 20px;
 }
 .card-title {
     font-family: "futura-pt";
@@ -187,6 +255,12 @@ hr {
 .card-text {
     font-family: "roboto-condensed";
     color: #3A7673;
+    font-style: italic;
+    font-size: 15px;
+}
+.card-text1 {
+    font-family: "roboto-condensed";
+    color: black;
     font-style: italic;
     font-size: 15px;
 }
@@ -202,42 +276,33 @@ hr {
     font-style: italic;
     font-size: 17px;
 }
+.imgSizing {
+    width: auto;
+    min-height: 340px;
+    object-fit: cover;
+}
+.imgSizing1 {
+    width: auto;
+    min-height: 30px;
+    object-fit: cover;
+}
 .contentTitle {
     font-size: 25px;
-    font-family: "futura-pt";
+    font-family: "roboto";
     font-style: bold;
-    color: #1B3B43;
+    color:black;
 }
 .contentContent {
     font-size: 20px; 
     font-style: normal;
-    font-family: "futura-pt";
-    color: #3A7673;
-}
-.overviewBox {
-    border: 2;
-    color: #1B3B43;
-    border-style: solid;
-}
-img {
-    border: 2;
-    color: #ECC19B;
-    border-style: solid;
-    border-radius: 5px;
-}
-h3 {
-    margin-top: 10px;
-    font-size: 25px;
-    font-family: "futura-pt";
-    font-style: bold;
-    color: #1B3B43;
-    text-decoration: underline;
+    font-family: "roboto";
+    color: black;
 }
 .maxWidth {
-    font-size: 18px; 
+    font-size: 20px; 
     font-style: normal;
-    font-family: "futura-pt";
-    color: #3A7673;
+    font-family: "roboto";
+    color: black;
     width: 100%
 }
 /* Footer Styles */
