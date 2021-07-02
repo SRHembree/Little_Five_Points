@@ -1934,7 +1934,7 @@ filter: drop-shadow(2px 2px 0 white)
      }
      .toc {
          position: sticky;
-         /* top: 19.5em;  */
+         top: 19.5em; 
          z-index: 1000; 
          height: 0;
          margin-left: -15% !important; 
