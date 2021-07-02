@@ -29,66 +29,53 @@
 
 <body>
   <!-- Nav HTML -->
-  <nav class="navbar navbar-expand-lg navbar-custom">
-    <a class="navbar-brand" href="">
-      <img src="../Little_Five_Points/images/Personal Logo.png" width="141" height="85" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" onclick="myFunction()">
-      <!-- data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation" -->
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarCollapse">
-      <ul class="navbar-nav ml-auto">
-        <li class="dropdown show shadow-sm rounded">
-          <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#3A7673;">
-            Work
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">COVID-Crushers Mobile App</a>
-            <a class="dropdown-item" href="#">Department of Energy UI Redesign</a>
-            <a class="dropdown-item" href="#">Little Five Points Center Redesign</a>
-            <a class="dropdown-item" href="#">Coding Project</a>
-            <a class="dropdown-item" href="#">Daily UI Challenges</a>
-          </div>
-        </li>
-        <li class="dropdown show shadow-sm rounded">
-          <a class="btn btn-secondary dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
-            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="background-color:#3A7673;">
-            Play
-          </a>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Photography</a>
-            <a class="dropdown-item" href="#">Illustrations</a>
-          </div>
-        </li>
-        <li class="navbar-btn shadow-sm rounded" style="background-color:#3A7673;">
-          <a class="nav-link" href="#">About</a>
-        </li>
-        <form class="form-inline shadow-sm rounded" method="get" action="images/Resume2021.pdf">
-          <button class="btn btn-outline-success"><i class="fa fa-download"
-              href="../Little_Five_Points/images/Resume2021.pdf"></i>Resume</button>
-        </form>
-      </ul>
-    </div>
-    <div class="hamburgerDisplay" id="hamburger">
-      <ul class="hamburgerSection">
-        <li class="hamburgerEntry">
-          <a href="#">Work</a>
-        </li>
-        <li class="hamburgerEntry">
-          <a href="#">Play</a>
-        </li>
-        <li class="hamburgerEntry">
-          <a href="#">About</a>
-        </li>
-        <li class="hamburgerEntry">
-          <a href="#">Resume</a>
-        </li>
-      </ul>
+  <nav class="navbar navbar-expand-lg navbar-light navbar-custom" id="topoftheworld">
+    <a class="navbar-brand d-lg-none" href="#"></a>
+    <div class="container-fluid savingThrow">
+      <a class="navbar-brand" href="">
+        <img src="../Portfolio_Home/images/Personal Logo.png" width="110" height="75"
+          alt="Sydney Hembree personal logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto p-2">
+          <li class="dropdown show rounded nav-item mt-4">
+            <a class="btn button nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Work
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item nav-link" href="#">COVID-Crushers Mobile App</a>
+              <a class="dropdown-item nav-link" href="#">Department of Energy UI Redesign</a>
+              <a class="dropdown-item nav-link" href="#">Little Five Points Center Redesign</a>
+              <a class="dropdown-item nav-link" href="#">Streams of Sound FE Development</a>
+              <a class="dropdown-item nav-link" href="#">Daily UI Challenges</a>
+            </div>
+          </li>
+          <li class="dropdown show rounded nav-item mt-4">
+            <a class="btn button nav-link dropdown-toggle" href="#" id="dropdownMenuLink" role="button"
+              data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Play
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              <a class="dropdown-item nav-link" href="#">Photography</a>
+              <a class="dropdown-item nav-link" href="#">Illustrations</a>
+            </div>
+          </li>
+          <li class="show rounded nav-item mt-4">
+            <a class="btn button nav-link" id="dropdownMenuLink" role="button" href="#">About</a>
+          </li>
+          <li class="show rounded nav-item mt-4" action="images/Resume2021.pdf">
+            <a class="btn button nav-link" id="dropdownMenuLink" role="button"
+              href="../Portfolio_Home/images/Resume2021.pdf">Resume</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
-  <br>
   <div class="toc toc-none toc-display" id="tableOfContents">
     <ul class="toc-section">
       <li class="toc-entry">
@@ -123,7 +110,6 @@
       </li>
     </ul>
   </div>
-  <br>
   <!--Scrolling Feature HTML-->
   <button onclick="newFunction()" id="tocsection" title="Navigate through Sections">Contents</button>
   <!-- Title Section of Case Study -->
@@ -170,6 +156,40 @@
   <br>
   <div class="gradient">
     <div class="container">
+      <div class="d-none d-sm-block text-black bg-white col-sm-1 bd-toc batman">
+        <ul class="section-nav">
+          <li class="toc-entry toc-h2 tlc">
+            <a href="#">Home</a>
+          </li>
+          <li class="toc-entry toc-h2 tlc">
+            <a href="#overview">Overview</a>
+          </li>
+          <li class="toc-entry toc-h2 tlc">
+            <a href="#process">Process</a>
+          </li>
+          <li class="toc-entry toc-h2 tlc">
+            <a href="#research">Research</a>
+          </li>
+          <li class="toc-entry toc-h2 tlc">
+            <a href="#definition">Definition</a>
+          </li>
+          <li class="toc-entry toc-h2 tlc">
+            <a href="#ideation">Ideation</a>
+          </li>
+          <li class="toc-entry toc-h2 tlc">
+            <a href="#prototyping">Prototyping</a>
+          </li>
+          <li class="toc-entry toc-h2 tlc">
+            <a href="#testing">Testing</a>
+          </li>
+          <li class="toc-entry toc-h2 tlc">
+            <a href="#styleGuide">Style Guide</a>
+          </li>
+          <li class="toc-entry toc-h2 tlc">
+            <a href="#conclusion">Conclusion</a>
+          </li>
+        </ul>
+      </div>
       <!-- Overview Section of Case Study -->
       <div class="flowerContainer">
         <div class="flower">
