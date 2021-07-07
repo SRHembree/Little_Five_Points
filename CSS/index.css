@@ -2540,6 +2540,10 @@ h3 {
     min-height: 30px;
     object-fit: cover;
 }
+.img-responsive {
+    height: auto;
+    width: 100%;
+}
 .contentTitle {
     font-size: 25px;
     font-family: "roboto";
