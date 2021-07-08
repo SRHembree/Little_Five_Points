@@ -715,10 +715,10 @@ filter: drop-shadow(2px 2px 0 white)
         overflow: hidden; 
         position: absolute; 
         left: -.75em; 
-        top: 165%; 
+        top: 130%; 
         width: 103%; 
         height: 300%; 
-        z-index: 0; 
+        z-index: -1; 
     }
     .flower {
         position: absolute;
@@ -1171,7 +1171,7 @@ filter: drop-shadow(2px 2px 0 white)
     }
  }
 @media only screen and (device-width: 375px) and (height:667px) {
-    /* styles for mobile browsers smaller than 480px; (iPhone) */
+    /* styles for mobile browsers smaller than 480px; (iPhone 6/7/8) */
      /* <!-- Sidebar (TOC) CSS --> */
      .d-none {
         display: none!important;
@@ -1200,7 +1200,7 @@ filter: drop-shadow(2px 2px 0 white)
      }
      .toc {
          position: sticky;
-         top: 20.5em; 
+         top: 19em; 
          z-index: 1000; 
          height: 0;
          margin-left: -12% !important; 
@@ -1224,10 +1224,10 @@ filter: drop-shadow(2px 2px 0 white)
          overflow: hidden; 
          position: absolute; 
          left: -.75em; 
-         top: 165%; 
+         top: 145%; 
          width: 103%; 
          height: 300%; 
-         z-index: 0; 
+         z-index: -1; 
      }
      .flower {
          position: absolute;
@@ -2337,9 +2337,10 @@ html {
     background-repeat: no-repeat;
     background-position: center; 
     background-size: 5000px auto; 
-    padding-top: 2em;
+    padding-top: 3em;
     padding-bottom: 2em;
     width: 100%; 
+    z-index: -2;
 }
 /* <!-- Nav CSS --> */
 #dropdownMenuLink {
@@ -2450,7 +2451,7 @@ h3 {
     color: #9BAFAA;
     border-style: solid;
     border-radius: 5px;
-    z-index: 0;
+    z-index: 1;
 }
 .protoVisuals2 img {
     margin: auto; 
@@ -2460,7 +2461,7 @@ h3 {
     color: #E5584C;
     border-style: solid;
     border-radius: 5px;
-    z-index: 0;
+    z-index: 1;
 }
 .protoVisuals3 img {
     margin: auto; 
@@ -2470,7 +2471,7 @@ h3 {
     color: #ECC19B;
     border-style: solid;
     border-radius: 5px;
-    z-index: 0;
+    z-index: 1;
 }
 .competitorAnalysis img {
     height: auto;
