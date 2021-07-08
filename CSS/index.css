@@ -1200,7 +1200,7 @@ filter: drop-shadow(2px 2px 0 white)
      }
      .toc {
          position: sticky;
-         top: 19em; 
+         top: 17em; 
          z-index: 1000; 
          height: 0;
          margin-left: -12% !important; 
